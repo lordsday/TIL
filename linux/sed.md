@@ -16,7 +16,7 @@ sed [-n] -f program-file [file_list]
 ```
 
 # Address
-* $: 맨 마지막 라인
+* $: Match the last line
 * example
  * 1, 3
  * 2, $
