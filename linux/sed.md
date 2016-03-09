@@ -18,6 +18,6 @@ sed [-n] -f program-file [file_list]
 # Address
 * $: 맨 마지막 라인
 * example
-** 1, 3
-** 2, $
-** /line1/,/line2/
+ * 1, 3
+ * 2, $
+ * /line1/,/line2/
