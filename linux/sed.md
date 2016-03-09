@@ -6,8 +6,8 @@ sed [-n] program [file_list]
 sed [-n] -f program-file [file_list]
 
 # Options
-* -n: silent
-* -i: in-place
+*-n: silent
+*-i: in-place
 
 # Instruction
 * s
@@ -16,8 +16,8 @@ sed [-n] -f program-file [file_list]
 '''
 
 # Address
-* $: 맨 마지막 라인
-* example
-** 1, 3
-** 2, $
-** /line1/,/line2/
+*$: 맨 마지막 라인
+*example
+**1, 3
+**2, $
+**/line1/,/line2/
