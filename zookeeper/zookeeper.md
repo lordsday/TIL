@@ -1,4 +1,5 @@
 # zkCli.sh
+## connect
 ```
 zkCli.sh -server ip:port
 ```
