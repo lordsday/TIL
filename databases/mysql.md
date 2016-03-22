@@ -31,18 +31,12 @@ mysql> create database DB명;
 
 ## 사용자 추가
 ```
-mysql> grant all privileges on DB명.* to USER명@'%' identified by 'password' with grant option;
-```
+mysql> GRANT ALL PRIVILEGES ON DB명.* to USER명@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
 
-## 사용자 권한 주기
-```
 mysql> GRANT ALL on DB명.* TO id@'localhost';
 mysql> GRANT ALL on DB명.* TO id;
 mysql> GRANT ALL on DB명.* TO id@'xxx.xxx.xxx.%';
-mysql> FLUSH PRIVILEGES;
-```
 
-## How to allow remote connection to mysql
-```sql
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
+mysql> FLUSH PRIVILEGES;
 ```
