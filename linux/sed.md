@@ -2,8 +2,10 @@
 sed - stream editor for filtering and transforming text
 
 # Synopsis
+```
 sed [-n] program [file_list]
 sed [-n] -f program-file [file_list]
+```
 
 # Options
 - n: silent
