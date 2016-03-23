@@ -40,3 +40,31 @@ mysql> GRANT ALL on DB명.* TO id@'xxx.xxx.xxx.%';
 
 mysql> FLUSH PRIVILEGES;
 ```
+
+# Query
+## Table별 사이즈 확인
+```sql
+SELECT 
+    table_name,
+    table_rows,
+    round(data_length/(1024*1024),2) as 'DATA_SIZE(MB)',
+    round(index_length/(1024*1024),2) as 'INDEX_SIZE(MB)'
+FROM information_schema.TABLES
+where table_schema = '데이터베이스이름'
+GROUP BY table_name 
+ORDER BY data_length DESC 
+LIMIT 10;
+```
+## Database별 사이즈 확인
+```sql
+SELECT
+	count(*) NUM_OF_TABLE,
+	table_schema,concat(round(sum(table_rows)/1000000,2),'M') rows,
+	concat(round(sum(data_length)/(1024*1024*1024),2),'G') DATA,
+	concat(round(sum(index_length)/(1024*1024*1024),2),'G') idx,
+	concat(round(sum(data_length+index_length)/(1024*1024*1024),2),'G') total_size,
+	round(sum(index_length)/sum(data_length),2) idxfrac
+FROM information_schema.TABLES
+GROUP BY table_schema
+ORDER BY sum(data_length+index_length) DESC LIMIT 10;
+```
