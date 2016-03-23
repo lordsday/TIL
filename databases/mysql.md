@@ -1,35 +1,31 @@
-# root 암호 설정
+# Install
+## root 암호 설정
 
-## mysqladmin을 이용하여 root 암호 설정하기
+### mysqladmin을 이용하여 root 암호 설정하기
 ```sh
 $ mysqladmin -u root -p password new-password
 ```
-
-## update문을 이용하여 root 암호 설정하기
+### update문을 이용하여 root 암호 설정하기
 ```
 mysql> update user set password = password('new-password') where user = 'root';
 ```
-
-## set password를 이용하여 root 암호 설정하기
+### set password를 이용하여 root 암호 설정하기
 ```
 mysql> set password for root = password('new-password');
 ```
 
-# Databases 보기와 생성
-
-## 데이터베이스 보기
+## Databases 보기와 생성
+### 데이터베이스 보기
 ```
 mysql> show databases;
 ```
-
-## 데이터베이스 생성
+### 데이터베이스 생성
 ```
 mysql> create database DB명;
 ```
 
-# 사용자
-
-## 사용자 추가
+## 사용자
+### 사용자 추가
 ```
 mysql> GRANT ALL PRIVILEGES ON DB명.* to USER명@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
@@ -67,4 +63,14 @@ SELECT
 FROM information_schema.TABLES
 GROUP BY table_schema
 ORDER BY sum(data_length+index_length) DESC LIMIT 10;
+```
+
+# Etc
+## Executing SQL Statements from a Text File
+```sh
+shell> mysql db_name < text_file
+```
+```
+mysql> source file_name
+mysql> \. file_name
 ```
