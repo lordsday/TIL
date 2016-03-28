@@ -88,3 +88,6 @@ $ set -o vi
 ```
 $ set -o emacs 
 ```
+
+# Source
+http://ss64.com/bash/syntax-keyboard.html
