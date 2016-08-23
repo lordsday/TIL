@@ -1,4 +1,4 @@
-os.walk
+# Recursive directory traversing
 ```python
 import os
 
