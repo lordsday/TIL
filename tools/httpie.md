@@ -16,5 +16,7 @@ $ http --verify=no -a username:password https://localhost:8080/api/v1.0/xxxx/
 
 # POST
 ```sh
-http --verify=no -a username:password POST https://localhost:8080/api/v1.0/services/xxxx param01=value01 parme02=value02
+$ http --verify=no -a username:password DELETE https://localhost:8080/api/v1.0/services/xxxx
+$ http --verify=no -a username:password POST https://localhost:8080/api/v1.0/services/xxxx param01=value01 parme02=value02
+$ http --verify=no -a username:password PUT https://localhost:8080/api/v1.0/services/xxxx/nodes containers:='["127.0.0.1:19000", "127.0.0.1:19000"]'
 ```
