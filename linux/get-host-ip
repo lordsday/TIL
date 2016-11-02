@@ -1,0 +1,5 @@
+# Get Host IP
+Run the following to find out:
+```bash
+$ hostname -I
+```
