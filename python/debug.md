@@ -7,3 +7,8 @@ If you run your program with the -i flag, Python will drop you into its interact
 ```sh
 $ python -i test.py
 ```
+
+The typical usage to break into the debugger from a running program is to insert
+```python
+import pdb; pdb.set_trace()
+```
