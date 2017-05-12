@@ -1,4 +1,4 @@
-# Customize the API Store and Gateway URLs
+# Running the Product
 https://docs.wso2.com/display/AM210/Running+the+Product
 
 # Adding Links to Navigate Between the Store and Publisher
