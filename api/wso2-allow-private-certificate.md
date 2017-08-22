@@ -6,6 +6,22 @@ keytool -importcert -file private.crt -keystore ${APIM_HOME}/repository/resource
 
 * https://stackoverflow.com/questions/33498881/wso2-api-manager-https-ssl-basessandbox-url
 
+* 암호 입력시 아래 설정값의 암호를 입력한다.
+repository/conf/carbon.xml
+```xml
+<KeyStore>
+    <!--­­ Keystore file location--­­>
+    <Location>${carbon.home}/repository/resources/security/wso2carbon.jks</Location>
+    <Type>JKS</Type>
+    <!--­­ Keystore password­­-->
+    <Password>wso2carbon</Password>
+    <!--­­ Private Key alias­­-->
+    <KeyAlias>wso2carbon</KeyAlias>
+    <!­­-- Private Key password­­-->
+    <KeyPassword>wso2carbon</KeyPassword>
+</KeyStore>
+```
+
 # Set the parameter HostnameVerifier to AllowAll for transportSender in the Axis2 configuration (axis2.xml).
 
 ```xml
