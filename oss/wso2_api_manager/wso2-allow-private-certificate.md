@@ -1,7 +1,7 @@
 # Add the client certificate
 
 ```sh
-keytool -importcert -file private.crt -keystore ${APIM_HOME}/repository/resources/security/wso2carbon.jks -alias "alias_name"
+keytool -importcert -file private.crt -keystore ${APIM_HOME}/repository/resources/security/client-truststore.jks -alias "alias_name"
 ```
 
 * When you are prompted for a password, enter the password in the settings below.
