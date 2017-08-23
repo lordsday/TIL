@@ -10,10 +10,12 @@
 log4j.rootLogger=<other loggers>, DAS_AGENT
 ```
 
-Change username or password if you need.
+### Change username or password if you need.
+If you change username or password of Analytics, you have to change this properties.
+
 ```
 log4j.appender.DAS_AGENT.userName=admin
-log4j.appender.DAS_AGENT.password=admin123
+log4j.appender.DAS_AGENT.password=admin
 ```
 
 # Management Console
