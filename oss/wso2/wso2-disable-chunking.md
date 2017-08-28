@@ -8,4 +8,5 @@
         <property name="DISABLE_CHUNKING" value="true" scope="axis2" />
 </sequence>
 ```
-http://lakshanigamage.blogspot.kr/2016/12/disable-chunking-in-wso2-api-manager.html
+* http://lakshanigamage.blogspot.kr/2016/12/disable-chunking-in-wso2-api-manager.html
+* https://docs.wso2.com/display/AM210/Adding+Mediation+Extensions
