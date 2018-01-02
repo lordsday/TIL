@@ -19,3 +19,12 @@
     ```
 
 https://docs.wso2.com/display/AM210/Tuning+Performance
+
+
+
+# Allow private certificates
+
+[wso2-allow-private-certificate.md](https://github.com/lordsday/TIL/blob/master/oss/wso2/wso2-allow-private-certificate.md)
+
+[wso2-setting.md]
+(https://github.com/lordsday/TIL/blob/master/oss/wso2/wso2-setting.md)
